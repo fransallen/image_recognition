@@ -6,7 +6,7 @@ import axios from 'axios'
 
 Vue.config.productionTip = false
 Vue.prototype.$http = axios
-axios.defaults.baseURL = 'http://localhost:5000/'
+axios.defaults.baseURL = 'https://image-recognition-api.frans.thedev.id/'
 
 new Vue({
   render: h => h(App),

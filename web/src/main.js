@@ -6,7 +6,7 @@ import axios from 'axios'
 
 Vue.config.productionTip = false
 Vue.prototype.$http = axios
-axios.defaults.baseURL = 'https://image-recognition-api.frans.thedev.id/'
+axios.defaults.baseURL = process.env.API_URL || 'https://image-recognition-api.frans.thedev.id/'
 
 new Vue({
   render: h => h(App),
